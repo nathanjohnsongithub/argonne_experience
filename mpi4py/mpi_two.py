@@ -1,12 +1,13 @@
 from mpi4py import MPI
 
+# Initialize MPI and get the rank of each process and the # of ranks (size)
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
-#####################ENTER SIZE OF ARRAY#########################
+##################### ENTER SIZE OF ARRAY #########################
 n = 50 
-#################################################################    
+###################################################################    
 
 def recieve():
     arr = comm.recv(None,0)    # each rank recieves there portion of the array

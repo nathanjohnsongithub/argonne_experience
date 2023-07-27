@@ -1,0 +1,4 @@
+To run all of these you need to install mpi4py, to do this
+	#
+	python -m pip install mpi4py
+	#

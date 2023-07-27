@@ -1,0 +1,12 @@
+mpi_two is a more advanced implementation of mpi4py.
+the program takes an empty array, fills it with zeros, 
+sends a section of the array to all of the other ranks 
+equally and they do some arithmetic on it and send it 
+back and print it out. to run the program
+	#
+	mpirun -n <number of ranks you want> python mpi_two.py
+	#
+	or
+	#
+	mpiexec -n <number of ranks you want> python mpi_two.py
+	#

@@ -1,0 +1,6 @@
+mpi_one is a basic implementation of mpi4py.
+the code takes each rank and assigns it a color then prints it out.
+to run the program type
+	#
+	mpirun -n <number of ranks you want> python mpi_one.py
+	#
