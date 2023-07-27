@@ -1,0 +1,15 @@
+mpi_three was my introduction to file sending and profilers in python.
+it creates a file with 0-n number of lines with an integer for the line number starting from 0.
+sends a section of the file and to each rank and they do something and then send it back to the master.
+
+this creates multiple files. the file named "myfile1.txt" contains the first created file with the number of lines for the inputed number -1
+the next file is "mychangedfile1.txt" that has the converted file that different parts of the program worked on
+the profile will then output 2 files for each rank. a .txt and .prof file. 
+the .prof file can be viewed using something called snakeviz which can be found here
+https://jiffyclub.github.io/snakeviz/
+you can view the .txt file like normal. the profile outputs this for each rank
+
+to run the program type
+	#
+	mpirun -n <number of ranks you want> python mpi_three.py
+	#
