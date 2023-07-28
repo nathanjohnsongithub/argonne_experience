@@ -1,0 +1,14 @@
+To run "converter_csv.py" or "conveter_excel.py" you first need to install pandas.
+it may already be installed but if not you can install it with pip
+	#
+	pip install pandas
+	#
+
+to run the program you can type
+	#
+	python converter_csv.py <.txt file that was output by cProfile>
+	#
+	python converter_excel.py <.txt file that was output by cProfile>
+	#
+
+the program will either output a csv or excel file with the data

@@ -15,7 +15,6 @@ a .prof file that can be used by some software to visualise the data. for more i
 a .txt file that can be viewed as normal
 '''
 
-
 # Dump results:
 # - for binary dump
 pr.dump_stats('NAME OF FILE YOU WANT.prof')
