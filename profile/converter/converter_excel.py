@@ -70,5 +70,9 @@ print(df)
 filename = sys.argv[1].replace('.txt', '.ods') # NOTE instead of ods you can put '.xls' for windows
 
 # put it into an Excel/ odf file
-with pd.ExcelWriter(filename, 'odf') as writer:
-     df.to_excel(writer)
+try:
+    with pd.ExcelWriter(filename, 'odf') as writer:
+        df.to_excel(writer)
+    print(f"Excel file '{filename}' created successfully.")
+except Exception as e:
+    print(f"Error occurred while creating Excel file: {e}")
