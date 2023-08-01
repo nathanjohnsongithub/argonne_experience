@@ -15,25 +15,21 @@ def make_matrix(arr, rows):
     # get the size of the columns rounding up from the size of the array and the # or ranks
     cols = math.ceil(len(arr) / size)
 
+    number_of_nones = len(arr) % rows
     # Add the extra Null values so its an equal matrix
-    arr += [None] * (rows - len(arr) % rows)
+    arr += [None] * (rows - number_of_nones)
 
     # create the matrix and populate it with values fror the array 
     matrix = [[arr[i * cols + j] for j in range(cols)] for i in range(rows)]
+    
+    return matrix, number_of_nones
 
-    return matrix
-
-def flatten_matrix(matrix):
+def flatten_matrix(matrix, number_of_nones):
     # create a numpy matrix from the matrix we inputed so we can flatten it and convert it back into a list
     temp_matrix = np.array(matrix).flatten().tolist()
-      
-    # find out how many Nones we need to remove
-    for index, num in enumerate(reversed(temp_matrix)):
-        if num is not None:
-            break
 
     # return the new flattened matrix with the None values removed and check if any were removed so we dont accidently return an empty list
-    return temp_matrix[:-index] if index != 0 else temp_matrix
+    return temp_matrix[:-number_of_nones] if number_of_nones != 0 else temp_matrix
 
 
 # make an empty array of size n
@@ -44,9 +40,10 @@ if(rank == 0):
     #  populate array only for master
     for i in range(n):     
         arr[i] = i
-    
+    print("\nArray we will be sending", arr, "\n")
+
     # Get the matrix
-    matrix = make_matrix(arr, size)
+    matrix, number_of_nones = make_matrix(arr, size)
     # Print it out
     print("Matrix we will be scattering\n", matrix, "\n")
 else:
@@ -69,7 +66,7 @@ converted_matrix = comm.gather(matrix, 0)
 if rank == 0:
     # flatten the matrix
     # NOTE Could just have everything as a numpy array as theyre better but I didnt want to change the list comprehension so we've got this
-    converted_matrix = flatten_matrix(converted_matrix)
+    converted_matrix = flatten_matrix(converted_matrix, number_of_nones)
     print("\nConverted Matrix\n", converted_matrix)
     
 
