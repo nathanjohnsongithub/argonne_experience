@@ -8,7 +8,7 @@ rank = comm.Get_rank()
 size = comm.Get_size()
 
 ##################### ENTER SIZE OF ARRAY #########################
-n = 83
+n = 85
 ###################################################################    
 
 def make_matrix(arr, rows):
@@ -24,12 +24,20 @@ def make_matrix(arr, rows):
     return matrix
 
 def flatten_matrix(matrix):
-    # create a numpy matrix from the matrix and flatten it
-    temp_matrix = np.array(matrix).flatten()
-    # return the list version of the numpy matrix
-    return temp_matrix.tolist()
+    # create a numpy matrix from the matrix we inputed so we can flatten it and convert it back into a list
+    temp_matrix = np.array(matrix).flatten().tolist()
+      
+    # find out how many Nones we need to remove
+    for index, num in enumerate(reversed(temp_matrix)):
+        if num is not None:
+            break
 
-arr = [0] * n # make an empty array of size n
+    # return the new flattened matrix with the None values removed and check if any were removed so we dont accidently return an empty list
+    return temp_matrix[:-index] if index != 0 else temp_matrix
+
+
+# make an empty array of size n
+arr = [0] * n 
 
 # if the process is the master
 if(rank == 0): 
@@ -57,12 +65,11 @@ matrix = [value + 100 * rank if value is not None else None for value in matrix]
 # gather the now converted matrix 
 converted_matrix = comm.gather(matrix, 0)
 
-# flatten the matrix
-# NOTE Could just have everything as a numpy array as theyre better but I didnt want to change the list comprehension so we've got this
-converted_matrix = flatten_matrix(converted_matrix)
-
 # Master prints out the converted matrix
 if rank == 0:
+    # flatten the matrix
+    # NOTE Could just have everything as a numpy array as theyre better but I didnt want to change the list comprehension so we've got this
+    converted_matrix = flatten_matrix(converted_matrix)
     print("\nConverted Matrix\n", converted_matrix)
     
 
