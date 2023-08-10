@@ -1,0 +1,13 @@
+         6 function calls in 6.358 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    6.091    6.091    6.091    6.091 {method 'recv' of 'mpi4py.MPI.Comm' objects}
+        1    0.157    0.157    6.248    6.248 MPIcProfileThree.py:16(recieve)
+        1    0.104    0.104    0.104    0.104 {method 'send' of 'mpi4py.MPI.Comm' objects}
+        1    0.006    0.006    6.358    6.358 MPIcProfileThree.py:37(make_file)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

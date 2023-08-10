@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/embed_python_class.dir/main.cpp.o -o embed_python_class  /usr/lib/x86_64-linux-gnu/libpython3.10.so 

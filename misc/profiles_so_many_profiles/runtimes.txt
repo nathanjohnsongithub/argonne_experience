@@ -1,0 +1,17 @@
+nh3.5det N_det=40 integral #ranks = 4 runtime 5.581586122512817s
+nh3.5det N_det=40 integral #ranks = 3 runtime 6.004909992218018s
+nh3.5det N_det=40 integral #ranks = 5 runtime 7.138516187667847s
+nh3.5det N_det=40 integral #ranks = 10 runtime 11.225253820419312s
+nh3.5det N_det=160 integral #ranks = 10 runtime 32.84048128128052s
+nh3.5det N_det=40 integral #ranks = 4 runtime 5.786707162857056s
+nh3.5det N_det=160 integral #ranks = 4 runtime 20.675321102142334s
+nh3.5det N_det=160 integral #ranks = 3 runtime 24.49653434753418s
+nh3.5det N_det=320 integral #ranks = 3 runtime 56.045477628707886s
+nh3.5det N_det=320 integral #ranks = 4 runtime 45.9446177482605s
+nh3.5det N_det=320 integral #ranks = 10 runtime 65.01108026504517s
+nh3.5det N_det=320 integral #ranks = 20 runtime 86.44301915168762s
+nh3.5det N_det=160 determinant #ranks = 4 runtime 31.619834661483765s
+nh3.5det N_det=40 determinant #ranks = 4 runtime 4.923857688903809s
+nh3.5det N_det=40 integral #ranks = 4 runtime 5.620218992233276s
+nh3.5det N_det=40 integral #ranks = 1 runtime 11.633834838867188s
+nh3.5det N_det=40 integral #ranks = 2 runtime 6.816930770874023s

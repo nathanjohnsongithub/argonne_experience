@@ -1,0 +1,3 @@
+/home/nathan.johnson/pybind_binding_python_and_cpp/first_attempt/build/CMakeFiles/embed_python_class.dir
+/home/nathan.johnson/pybind_binding_python_and_cpp/first_attempt/build/CMakeFiles/edit_cache.dir
+/home/nathan.johnson/pybind_binding_python_and_cpp/first_attempt/build/CMakeFiles/rebuild_cache.dir

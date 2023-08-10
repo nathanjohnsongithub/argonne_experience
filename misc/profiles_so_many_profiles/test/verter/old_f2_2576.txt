@@ -1,0 +1,481 @@
+         5386489534 function calls (5386489144 primitive calls) in 5420.321 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+1683396326 2130.913    0.000 2135.449    0.000 drivers.py:178(exc_degree)
+        4 1401.046  350.262 5216.036 1304.009 drivers.py:1908(psi_external_pt2)
+1683396326  974.222    0.000 3111.430    0.000 drivers.py:339(H_ij)
+459414608  186.121    0.000  375.934    0.000 drivers.py:1145(<genexpr>)
+      389  136.264    0.350  136.264    0.350 {method 'Allreduce' of 'mpi4py.MPI.Comm' objects}
+461938385  123.596    0.000  123.618    0.000 drivers.py:494(H_ijkl_orbital)
+      114   71.181    0.624   71.606    0.628 drivers.py:1500(H_i_implicit_matrix_product_step)
+459414608   67.795    0.000   67.795    0.000 drivers.py:503(H_ii_indices)
+ 34929014   44.932    0.000   57.425    0.000 drivers.py:107(apply_excitation)
+  6102051   41.238    0.000  432.063    0.000 {built-in method builtins.sum}
+ 16210360   38.001    0.000   54.324    0.000 drivers.py:209(single_phase)
+        8   23.043    2.880   87.213   10.902 drivers.py:160(gen_all_connected_determinant)
+  2042570   17.617    0.000   86.613    0.000 drivers.py:623(do_double_oppspin)
+212558763   16.323    0.000   16.323    0.000 drivers.py:213(<lambda>)
+ 60482255   16.012    0.000   16.012    0.000 {built-in method __new__ of type object at 0x556a68b4e9a0}
+ 34929015   12.492    0.000   12.492    0.000 {built-in method builtins.sorted}
+ 60482251   11.989    0.000   28.001    0.000 <string>:1(<lambda>)
+        8    8.933    1.117   15.659    1.957 drivers.py:1455(H_i_1e_matrix_elements)
+ 31694460    8.164    0.000   26.020    0.000 drivers.py:156(<genexpr>)
+  1634385    7.977    0.000   30.989    0.000 drivers.py:599(do_double_samespin)
+  1331481    6.906    0.000   19.912    0.000 drivers.py:582(do_single)
+       12    6.470    0.539    6.470    0.539 drivers.py:1187(<dictcomp>)
+ 36727459    6.073    0.000    6.073    0.000 drivers.py:328(H_ij_orbital)
+ 20346210    4.585    0.000    7.736    0.000 drivers.py:335(<genexpr>)
+      212    4.504    0.021    4.504    0.021 {method 'Allgatherv' of 'mpi4py.MPI.Comm' objects}
+ 20346210    4.362    0.000    7.156    0.000 drivers.py:336(<genexpr>)
+  1835712    4.281    0.000    8.703    0.000 drivers.py:521(get_dets_occ_in_orbitals)
+        4    4.146    1.037 5420.244 1355.061 drivers.py:1984(selection_step)
+ 45790812    3.825    0.000    3.825    0.000 {built-in method builtins.getattr}
+  6655740    3.617    0.000   17.513    0.000 drivers.py:147(<genexpr>)
+  6655740    3.571    0.000   18.361    0.000 drivers.py:152(<genexpr>)
+  2033452    2.845    0.000    4.535    0.000 drivers.py:173(exc_degree_spindet)
+  2034621    2.584    0.000   22.862    0.000 drivers.py:332(H_ii)
+   912240    2.290    0.000   10.924    0.000 drivers.py:547(get_dets_via_orbital_occupancy)
+   912240    1.943    0.000    1.943    0.000 {method 'union' of 'set' objects}
+  4556597    1.719    0.000  151.697    0.000 drivers.py:1086(H_indices)
+   923472    1.617    0.000    1.617    0.000 {method 'intersection' of 'set' objects}
+  2032808    1.592    0.000  437.233    0.000 drivers.py:1409(H_ii)
+  2033452    1.478    0.000    1.478    0.000 {method 'symmetric_difference' of 'set' objects}
+  2627462    1.305    0.000  101.424    0.000 drivers.py:1048(category_G)
+  4627481    1.247    0.000  143.292    0.000 drivers.py:1099(H_indices_idx)
+  2032808    1.026    0.000  412.811    0.000 drivers.py:1144(H_ii)
+  1301553    0.920    0.000    9.612    0.000 drivers.py:252(double_phase)
+        4    0.888    0.222  437.864  109.466 drivers.py:1961(<listcomp>)
+        8    0.749    0.094   91.298   11.412 drivers.py:1467(H_i_2e_matrix_elements)
+       53    0.716    0.014    0.726    0.014 linalg.py:1336(eigh)
+  1835712    0.508    0.000    0.508    0.000 drivers.py:539(<listcomp>)
+2394/2145    0.489    0.000    2.047    0.001 {built-in method numpy.core._multiarray_umath.implement_array_function}
+   104281    0.476    0.000    0.476    0.000 drivers.py:217(single_exc_no_phase)
+        8    0.425    0.053    0.425    0.053 {method 'reshape' of 'numpy.ndarray' objects}
+      845    0.391    0.000    0.391    0.000 {built-in method numpy.zeros}
+   842932    0.302    0.000   14.399    0.000 drivers.py:725(do_single_C)
+      167    0.299    0.002    0.299    0.002 {built-in method builtins.print}
+   665829    0.271    0.000   22.367    0.000 drivers.py:878(category_E)
+     4830    0.271    0.000    2.276    0.000 drivers.py:124(gen_all_connected_det_from_det)
+   104281    0.229    0.000    1.728    0.000 drivers.py:342(H_ij_spindet)
+   141792    0.226    0.000    0.374    0.000 integral_indexing_utils.py:143(canonical_idx4)
+   411813    0.221    0.000    0.221    0.000 drivers.py:569(do_diagonal)
+2037950/2037927    0.213    0.000    0.213    0.000 {built-in method builtins.len}
+   829816    0.204    0.000   14.636    0.000 drivers.py:713(category_C)
+   104281    0.196    0.000    1.370    0.000 drivers.py:235(single_exc)
+   913584    0.192    0.000    0.192    0.000 drivers.py:541(<listcomp>)
+    70908    0.168    0.000    0.178    0.000 integral_indexing_utils.py:85(compound_idx4_reverse)
+  1835846    0.161    0.000    0.161    0.000 {method 'items' of 'dict' objects}
+        4    0.156    0.039    0.156    0.039 {built-in method numpy.core._multiarray_umath.c_einsum}
+     1184    0.144    0.000    0.144    0.000 {built-in method numpy.array}
+        4    0.139    0.035    0.139    0.035 {method 'argpartition' of 'numpy.ndarray' objects}
+   385236    0.138    0.000    6.357    0.000 drivers.py:889(do_single_E)
+        4    0.137    0.034    0.137    0.034 drivers.py:1888(psi_external_local)
+   141792    0.127    0.000    0.501    0.000 drivers.py:35(integral_category)
+   295408    0.110    0.000    0.110    0.000 {built-in method builtins.min}
+    19320    0.104    0.000    0.104    0.000 drivers.py:93(gen_all_excitation)
+   128/88    0.076    0.001  201.117    2.285 functools.py:961(__get__)
+        4    0.074    0.018  155.381   38.845 drivers.py:1654(distributed_davidson)
+       98    0.060    0.001    0.079    0.001 _methods.py:91(_clip_dep_is_scalar_nan)
+   295387    0.059    0.000    0.059    0.000 {built-in method builtins.max}
+      102    0.056    0.001    0.406    0.004 twodim_base.py:234(diag)
+   174072    0.054    0.000    2.057    0.000 drivers.py:995(category_F)
+   265998    0.053    0.000    0.265    0.000 drivers.py:678(category_B)
+   265998    0.051    0.000    0.208    0.000 drivers.py:689(do_diagonal_B)
+       49    0.040    0.001    0.831    0.017 drivers.py:1622(preconditioning)
+      506    0.039    0.000    0.041    0.000 numerictypes.py:575(_can_coerce_all)
+      151    0.039    0.000    0.040    0.000 linalg.py:2363(norm)
+    43533    0.029    0.000    0.029    0.000 {method 'add' of 'set' objects}
+    19320    0.028    0.000    0.132    0.000 drivers.py:113(gen_all_connected_spindet)
+   132372    0.027    0.000    0.120    0.000 drivers.py:1013(do_diagonal_F)
+        4    0.025    0.006   36.678    9.170 drivers.py:1857(E)
+        4    0.024    0.006    0.024    0.006 {built-in method builtins.next}
+    52505    0.021    0.000    0.907    0.000 drivers.py:806(do_single_D)
+      604    0.018    0.000    0.018    0.000 fromnumeric.py:3127(ndim)
+    50861    0.017    0.000    0.929    0.000 drivers.py:795(category_D)
+        1    0.013    0.013    0.013    0.013 {method 'read' of '_io.TextIOWrapper' objects}
+        1    0.012    0.012    0.054    0.054 io.py:23(load_integrals)
+    12240    0.009    0.000    0.036    0.000 integral_indexing_utils.py:47(compound_idx4)
+     5998    0.009    0.000    0.010    0.000 integral_indexing_utils.py:65(compound_idx2_reverse)
+       53    0.008    0.000    0.008    0.000 {method 'upper' of 'str' objects}
+        8    0.008    0.001    0.008    0.001 {method 'accumulate' of 'numpy.ufunc' objects}
+    11759    0.008    0.000    0.026    0.000 integral_indexing_utils.py:14(compound_idx2)
+       24    0.007    0.000    0.037    0.002 drivers.py:1175(get_dets_occ)
+       49    0.004    0.000    1.023    0.021 drivers.py:1599(mgs)
+      253    0.004    0.000    0.102    0.000 index_tricks.py:323(__getitem__)
+    13443    0.003    0.000    0.043    0.000 drivers.py:665(do_diagonal_A)
+    13443    0.003    0.000    0.046    0.000 drivers.py:654(category_A)
+     6440    0.002    0.000    0.002    0.000 {method 'split' of 'str' objects}
+     5998    0.001    0.000    0.001    0.000 {built-in method math.isqrt}
+     3220    0.001    0.000    0.001    0.000 io.py:123(decode_det)
+        2    0.001    0.001    0.001    0.001 {built-in method io.open}
+     3542    0.001    0.000    0.001    0.000 numerictypes.py:584(<listcomp>)
+        4    0.001    0.000    0.001    0.000 {built-in method posix.lstat}
+      514    0.001    0.000    0.397    0.001 <__array_function__ internals>:2(dot)
+        4    0.001    0.000    0.001    0.000 drivers.py:2000(<listcomp>)
+      253    0.001    0.000    0.042    0.000 numerictypes.py:599(find_common_type)
+       49    0.001    0.000    0.080    0.002 {method 'clip' of 'numpy.ndarray' objects}
+        6    0.001    0.000    0.001    0.000 {built-in method marshal.loads}
+        4    0.001    0.000    0.257    0.064 drivers.py:1413(D_i)
+       57    0.001    0.000  178.639    3.134 drivers.py:1489(H_i_implicit_matrix_product)
+      604    0.001    0.000    0.020    0.000 <__array_function__ internals>:2(ndim)
+       49    0.001    0.000    0.001    0.000 _methods.py:106(_clip_dep_invoke_with_casting)
+      163    0.001    0.000    0.299    0.002 drivers.py:1635(print_master)
+        1    0.001    0.001    0.017    0.017 io.py:93(load_wf)
+        2    0.000    0.000    0.000    0.000 {built-in method _imp.create_dynamic}
+      253    0.000    0.000    0.055    0.000 <__array_function__ internals>:2(concatenate)
+        7    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+     2398    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+      151    0.000    0.000    0.056    0.000 <__array_function__ internals>:2(norm)
+      328    0.000    0.000    0.001    0.000 <__array_function__ internals>:2(inner)
+       24    0.000    0.000    0.000    0.000 typing.py:306(inner)
+      332    0.000    0.000    0.016    0.000 <__array_function__ internals>:2(copy)
+      253    0.000    0.000    0.000    0.000 numerictypes.py:651(<listcomp>)
+       49    0.000    0.000    0.080    0.002 _methods.py:125(_clip)
+       53    0.000    0.000    0.000    0.000 linalg.py:135(_commonType)
+     14/8    0.000    0.000    0.000    0.000 sre_parse.py:494(_parse)
+     1808    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      151    0.000    0.000    0.000    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+      332    0.000    0.000    0.011    0.000 function_base.py:726(copy)
+       56    0.000    0.000    0.000    0.000 {built-in method posix.stat}
+      102    0.000    0.000    0.423    0.004 <__array_function__ internals>:2(diag)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.exec_builtin}
+      302    0.000    0.000    0.000    0.000 {built-in method numpy.asarray}
+       53    0.000    0.000    0.726    0.014 <__array_function__ internals>:2(eigh)
+      514    0.000    0.000    0.000    0.000 multiarray.py:736(dot)
+        1    0.000    0.000    0.001    0.001 locale.py:1(<module>)
+      257    0.000    0.000    0.000    0.000 linalg.py:112(isComplexType)
+       53    0.000    0.000    0.220    0.004 fromnumeric.py:51(_wrapfunc)
+       98    0.000    0.000    0.000    0.000 _methods.py:101(_clip_dep_is_byte_swapped)
+       12    0.000    0.000    0.009    0.001 drivers.py:1824(__init__)
+       12    0.000    0.000    0.037    0.003 drivers.py:1163(get_spindet_a_occ_spindet_b_occ)
+       49    0.000    0.000    0.081    0.002 <__array_function__ internals>:2(clip)
+      604    0.000    0.000    0.000    0.000 fromnumeric.py:3123(_ndim_dispatcher)
+       53    0.000    0.000    0.000    0.000 linalg.py:107(_makearray)
+       18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1536(find_spec)
+       49    0.000    0.000    0.081    0.002 fromnumeric.py:2046(clip)
+      461    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+      106    0.000    0.000    0.000    0.000 linalg.py:125(_realType)
+      128    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        8    0.000    0.000   87.214   10.902 drivers.py:1880(psi_external)
+      434    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+      106    0.000    0.000    0.000    0.000 {method 'astype' of 'numpy.ndarray' objects}
+     22/7    0.000    0.000    0.000    0.000 sre_compile.py:87(_compile)
+       16    0.000    0.000    0.000    0.000 drivers.py:90(__init__)
+        9    0.000    0.000    0.000    0.000 drivers.py:1317(__init__)
+       61    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
+       53    0.000    0.000    0.000    0.000 linalg.py:102(get_linalg_error_extobj)
+        6    0.000    0.000    0.000    0.000 {built-in method io.open_code}
+      328    0.000    0.000    0.000    0.000 multiarray.py:249(inner)
+       11    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+      332    0.000    0.000    0.000    0.000 function_base.py:722(_copy_dispatcher)
+       53    0.000    0.000    0.000    0.000 linalg.py:199(_assert_stacked_square)
+      151    0.000    0.000    0.000    0.000 linalg.py:2359(_norm_dispatcher)
+      253    0.000    0.000    0.000    0.000 multiarray.py:148(concatenate)
+       61    0.000    0.000    0.000    0.000 codecs.py:319(decode)
+        6    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+       19    0.000    0.000    0.001    0.000 re.py:288(_compile)
+        8    0.000    0.000    0.008    0.001 drivers.py:1365(offsets)
+        8    0.000    0.000    0.000    0.000 drivers.py:1339(distribution)
+       53    0.000    0.000    0.000    0.000 linalg.py:193(_assert_stacked_2d)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.eval}
+       49    0.000    0.000    0.000    0.000 {method 'transpose' of 'numpy.ndarray' objects}
+        8    0.000    0.000    0.000    0.000 drivers.py:1379(psi_local)
+       24    0.000    0.000    0.000    0.000 posixpath.py:71(join)
+      113    0.000    0.000    0.000    0.000 sre_parse.py:234(__next)
+        1    0.000    0.000    0.002    0.002 shutil.py:1(<module>)
+        9    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:921(_find_spec)
+       88    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:128(<listcomp>)
+    27/12    0.000    0.000    0.000    0.000 sre_parse.py:175(getwidth)
+       88    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:126(_path_join)
+       10    0.000    0.000    0.000    0.000 sre_compile.py:292(_optimize_charset)
+        1    0.000    0.000    0.000    0.000 __init__.py:328(namedtuple)
+        4    0.000    0.000  155.381   38.845 drivers.py:1843(E_and_psi_coef)
+       26    0.000    0.000    0.000    0.000 {method 'Get_size' of 'mpi4py.MPI.Comm' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _imp.exec_dynamic}
+       12    0.000    0.000    0.000    0.000 typing.py:1037(__hash__)
+        6    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:950(get_code)
+        3    0.000    0.000    0.001    0.000 gettext.py:542(find)
+     13/7    0.000    0.000    0.001    0.000 sre_parse.py:436(_parse_sub)
+       12    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:380(cache_from_source)
+        7    0.000    0.000    0.000    0.000 sre_compile.py:560(_compile_info)
+       12    0.000    0.000    6.470    0.539 drivers.py:1184(det_to_index_ext)
+        4    0.000    0.000    0.000    0.000 twodim_base.py:161(eye)
+        4    0.000    0.000    0.139    0.035 fromnumeric.py:763(argpartition)
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1399(_get_spec)
+        5    0.000    0.000    0.003    0.001 argparse.py:1404(add_argument)
+      111    0.000    0.000    0.000    0.000 sre_parse.py:165(__getitem__)
+      253    0.000    0.000    0.000    0.000 numerictypes.py:652(<listcomp>)
+        4    0.000    0.000    0.156    0.039 einsumfunc.py:997(einsum)
+        7    0.000    0.000    0.001    0.000 sre_compile.py:783(compile)
+      9/3    0.000    0.000    0.004    0.001 <frozen importlib._bootstrap>:1022(_find_and_load)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:492(_init_module_attrs)
+      9/3    0.000    0.000    0.004    0.001 <frozen importlib._bootstrap>:664(_load_unlocked)
+       53    0.000    0.000    0.000    0.000 {built-in method builtins.all}
+        4    0.000    0.000    0.139    0.035 <__array_function__ internals>:2(argpartition)
+        4    0.000    0.000    0.156    0.039 <__array_function__ internals>:2(einsum)
+        8    0.000    0.000    0.000    0.000 drivers.py:1397(Hamiltonian_2e_driver)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:179(_get_module_lock)
+        5    0.000    0.000    0.003    0.001 argparse.py:170(__init__)
+        6    0.000    0.000    0.001    0.000 gettext.py:211(_expand_lang)
+      102    0.000    0.000    0.000    0.000 {built-in method builtins.abs}
+       12    0.000    0.000    0.037    0.003 drivers.py:1189(spindet_occ_int)
+      102    0.000    0.000    0.000    0.000 twodim_base.py:230(_diag_dispatcher)
+        7    0.000    0.000    0.001    0.000 sre_parse.py:944(parse)
+      102    0.000    0.000    0.000    0.000 {built-in method numpy.asanyarray}
+        3    0.000    0.000    0.000    0.000 argparse.py:1322(__init__)
+       53    0.000    0.000    0.000    0.000 linalg.py:1080(_eigvalsh_dispatcher)
+      101    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:244(_verbose_message)
+       22    0.000    0.000    0.000    0.000 os.py:674(__getitem__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:721(spec_from_file_location)
+        1    0.000    0.000    0.000    0.000 argparse.py:1883(_parse_known_args)
+        8    0.000    0.000    0.000    0.000 drivers.py:1393(Hamiltonian_1e_driver)
+        8    0.000    0.000    0.001    0.000 drivers.py:1076(N_orb)
+        5    0.000    0.000    0.000    0.000 shutil.py:1377(get_terminal_size)
+       36    0.000    0.000    0.037    0.001 drivers.py:1182(<genexpr>)
+       77    0.000    0.000    0.000    0.000 sre_parse.py:255(get)
+        8    0.000    0.000    0.001    0.000 drivers.py:1081(exci)
+       49    0.000    0.000    0.000    0.000 fromnumeric.py:2042(_clip_dispatcher)
+        4    0.000    0.000    0.000    0.000 drivers.py:1640(initial_guess_vectors)
+       53    0.000    0.000    0.000    0.000 {method '__array_prepare__' of 'numpy.ndarray' objects}
+      108    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1070(get_data)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:125(release)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:100(acquire)
+       12    0.000    0.000    0.000    0.000 drivers.py:1157(__init__)
+       56    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.000    0.000 lzma.py:1(<module>)
+       26    0.000    0.000    0.000    0.000 {method 'Get_rank' of 'mpi4py.MPI.Comm' objects}
+        1    0.000    0.000    0.005    0.005 argparse.py:1706(__init__)
+        4    0.000    0.000    0.001    0.000 glob.py:13(glob)
+      9/3    0.000    0.000    0.004    0.001 <frozen importlib._bootstrap>:987(_find_and_load_unlocked)
+        5    0.000    0.000    0.000    0.000 argparse.py:1545(_get_optional_kwargs)
+        7    0.000    0.000    0.000    0.000 enum.py:986(__and__)
+        6    0.000    0.000    0.000    0.000 sre_compile.py:437(<listcomp>)
+       12    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
+        6    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:670(_compile_bytecode)
+     10/7    0.000    0.000    0.000    0.000 sre_compile.py:485(_get_literal_prefix)
+        9    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:564(module_from_spec)
+        4    0.000    0.000    0.001    0.000 drivers.py:1387(N_orb)
+        4    0.000    0.000    0.000    0.000 {built-in method _abc._abc_init}
+        8    0.000    0.000    0.001    0.000 glob.py:53(_iglob)
+        7    0.000    0.000    0.000    0.000 sre_parse.py:225(__init__)
+       37    0.000    0.000    0.000    0.000 argparse.py:1375(register)
+       72    0.000    0.000    0.000    0.000 sre_parse.py:250(match)
+        6    0.000    0.000    0.000    0.000 locale.py:396(normalize)
+      188    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+      6/3    0.000    0.000    0.004    0.001 <frozen importlib._bootstrap_external>:877(exec_module)
+       22    0.000    0.000    0.000    0.000 os.py:754(encode)
+       84    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       24    0.000    0.000    0.000    0.000 genericpath.py:16(exists)
+      162    0.000    0.000    0.000    0.000 io.py:141(<genexpr>)
+        3    0.000    0.000    0.000    0.000 __init__.py:43(normalize_encoding)
+       32    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:140(_path_stat)
+        8    0.000    0.000    0.000    0.000 drivers.py:1360(local_size)
+        7    0.000    0.000    0.000    0.000 sre_compile.py:622(_code)
+       10    0.000    0.000    0.000    0.000 sre_parse.py:356(_escape)
+       31    0.000    0.000    0.000    0.000 sre_parse.py:287(tell)
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.divmod}
+       10    0.000    0.000    0.000    0.000 sre_compile.py:265(_compile_charset)
+     12/3    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+       24    0.000    0.000    0.000    0.000 einsumfunc.py:989(_einsum_dispatcher)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:585(_classify_pyc)
+        4    0.000    0.000    0.000    0.000 drivers.py:1550(__init__)
+       23    0.000    0.000    0.000    0.000 sre_parse.py:112(__init__)
+        6    0.000    0.000    0.000    0.000 sre_compile.py:435(_mk_bitmap)
+       45    0.000    0.000    0.000    0.000 sre_parse.py:161(__len__)
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.TextIOWrapper' objects}
+        5    0.000    0.000    0.000    0.000 argparse.py:1465(_add_action)
+       18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:84(_unpack_uint32)
+        1    0.000    0.000    0.001    0.001 bz2.py:1(<module>)
+       82    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+       32    0.000    0.000    0.000    0.000 sre_parse.py:173(append)
+       14    0.000    0.000    0.000    0.000 enum.py:359(__call__)
+       26    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1356(_path_importer_cache)
+       62    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 glob.py:1(<module>)
+       29    0.000    0.000    0.000    0.000 posixpath.py:41(_get_sep)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:510(_get_cached)
+        8    0.000    0.000    0.000    0.000 <string>:2(__init__)
+        4    0.000    0.000    0.000    0.000 abc.py:105(__new__)
+        4    0.000    0.000    0.000    0.000 posixpath.py:100(split)
+        3    0.000    0.000    0.001    0.000 gettext.py:598(translation)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1531(_get_spec)
+        3    0.000    0.000    0.000    0.000 argparse.py:2432(_get_values)
+        5    0.000    0.000    0.000    0.000 argparse.py:832(__init__)
+        4    0.000    0.000    0.000    0.000 glob.py:26(iglob)
+        5    0.000    0.000    0.000    0.000 argparse.py:603(_format_args)
+       14    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:391(cached)
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.hash}
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:71(__init__)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:198(cb)
+        3    0.000    0.000    0.000    0.000 locale.py:362(_replace_encoding)
+        1    0.000    0.000    0.000    0.000 io.py:142(<listcomp>)
+        1    0.000    0.000    0.000    0.000 argparse.py:1844(parse_known_args)
+        4    0.000    0.000    0.000    0.000 fromnumeric.py:759(_argpartition_dispatcher)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:169(__enter__)
+        2    0.000    0.000    0.000    0.000 argparse.py:1632(__init__)
+       25    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:897(__exit__)
+       87    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+       14    0.000    0.000    0.000    0.000 enum.py:678(__new__)
+        8    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1431(find_spec)
+        7    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        3    0.000    0.000    0.000    0.000 argparse.py:1951(consume_optional)
+       12    0.000    0.000    0.000    0.000 _collections_abc.py:816(get)
+       34    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+        5    0.000    0.000    0.000    0.000 {built-in method posix.get_terminal_size}
+        4    0.000    0.000    0.000    0.000 drivers.py:1838(DM)
+       25    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:893(__enter__)
+       16    0.000    0.000    0.001    0.000 re.py:249(compile)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:357(__init__)
+        7    0.000    0.000    0.000    0.000 sre_parse.py:928(fix_flags)
+        4    0.000    0.000    0.000    0.000 glob.py:208(has_magic)
+      6/3    0.000    0.000    0.003    0.001 {built-in method builtins.exec}
+        3    0.000    0.000    0.000    0.000 argparse.py:2158(_match_argument)
+       48    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       24    0.000    0.000    0.000    0.000 sre_parse.py:82(groups)
+       24    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
+        3    0.000    0.000    0.000    0.000 argparse.py:1930(take_action)
+       43    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+        5    0.000    0.000    0.000    0.000 sre_parse.py:85(opengroup)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:746(find_spec)
+        8    0.000    0.000    0.000    0.000 {built-in method from_iterable}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:618(_validate_timestamp_pyc)
+       14    0.000    0.000    0.000    0.000 argparse.py:1379(_registry_get)
+        4    0.000    0.000    0.001    0.000 posixpath.py:174(lexists)
+        5    0.000    0.000    0.003    0.001 argparse.py:2554(_get_formatter)
+        1    0.000    0.000    0.000    0.000 functools.py:35(update_wrapper)
+       14    0.000    0.000    0.000    0.000 sre_compile.py:619(isstring)
+        5    0.000    0.000    0.000    0.000 argparse.py:1579(_pop_action_class)
+        9    0.000    0.000    0.000    0.000 {method 'match' of 're.Pattern' objects}
+       43    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:542(_check_name_wrapper)
+        4    0.000    0.000    0.000    0.000 sre_parse.py:433(_uniq)
+        1    0.000    0.000    0.000    0.000 _compression.py:1(<module>)
+        9    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+        1    0.000    0.000    0.000    0.000 bz2.py:26(BZ2File)
+        7    0.000    0.000    0.000    0.000 sre_parse.py:76(__init__)
+        5    0.000    0.000    0.000    0.000 argparse.py:1654(_add_action)
+       49    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        8    0.000    0.000    0.000    0.000 sre_compile.py:447(_simple)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:404(parent)
+        4    0.000    0.000    0.000    0.000 argparse.py:918(__init__)
+        4    0.000    0.000    0.000    0.000 sre_compile.py:516(_get_charset_prefix)
+        5    0.000    0.000    0.000    0.000 argparse.py:587(_metavar_formatter)
+        1    0.000    0.000    0.000    0.000 lzma.py:38(LZMAFile)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.create_builtin}
+       17    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 sre_parse.py:268(getuntil)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
+        4    0.000    0.000    0.000    0.000 argparse.py:2488(_get_value)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1174(create_module)
+        5    0.000    0.000    0.000    0.000 argparse.py:1817(_add_action)
+        3    0.000    0.000    0.001    0.000 gettext.py:679(dgettext)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:165(__init__)
+        2    0.000    0.000    0.000    0.000 codecs.py:309(__init__)
+        1    0.000    0.000    0.000    0.000 posixpath.py:140(basename)
+        2    0.000    0.000    0.000    0.000 argparse.py:1455(add_argument_group)
+       22    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:826(find_spec)
+       40    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1089(path_stats)
+        4    0.000    0.000    0.001    0.000 glob.py:177(_lexists)
+        4    0.000    0.000    0.000    0.000 {built-in method fromkeys}
+       10    0.000    0.000    0.000    0.000 sre_compile.py:81(_combine_flags)
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:180(_path_isabs)
+        5    0.000    0.000    0.000    0.000 types.py:176(__get__)
+        3    0.000    0.000    0.000    0.000 sre_compile.py:456(_generate_overlap_table)
+       18    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        3    0.000    0.000    0.000    0.000 argparse.py:1583(_get_handler)
+       19    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+       18    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 io.py:128(grouper)
+        4    0.000    0.000    0.000    0.000 {method 'item' of 'numpy.ndarray' objects}
+       18    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        5    0.000    0.000    0.000    0.000 sre_parse.py:97(closegroup)
+        6    0.000    0.000    0.000    0.000 argparse.py:2196(_parse_optional)
+       18    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        5    0.000    0.000    0.000    0.000 argparse.py:215(__init__)
+        5    0.000    0.000    0.000    0.000 argparse.py:1592(_check_conflict)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:421(spec_from_loader)
+        4    0.000    0.000    0.000    0.000 {method 'search' of 're.Pattern' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1182(exec_module)
+       14    0.000    0.000    0.000    0.000 sre_compile.py:477(_get_iscased)
+       16    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+       18    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:71(_relax_case)
+        5    0.000    0.000    0.000    0.000 {method 'fileno' of '_io.TextIOWrapper' objects}
+        3    0.000    0.000    0.000    0.000 argparse.py:2299(_get_nargs_pattern)
+       18    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1040(__init__)
+        4    0.000    0.000    0.000    0.000 __init__.py:402(<genexpr>)
+        8    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
+        1    0.000    0.000    0.000    0.000 argparse.py:2028(consume_positionals)
+        5    0.000    0.000    0.000    0.000 argparse.py:596(format)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:254(_requires_builtin_wrapper)
+        3    0.000    0.000    0.000    0.000 re.py:187(match)
+        3    0.000    0.000    0.001    0.000 gettext.py:756(gettext)
+        8    0.000    0.000    0.000    0.000 sre_parse.py:169(__setitem__)
+        1    0.000    0.000    0.000    0.000 argparse.py:1098(__init__)
+        2    0.000    0.000    0.000    0.000 codecs.py:260(__init__)
+        1    0.000    0.000    0.000    0.000 _compression.py:33(DecompressReader)
+        3    0.000    0.000    0.000    0.000 os.py:758(decode)
+        6    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:770(create_module)
+        6    0.000    0.000    0.000    0.000 {method 'translate' of 'bytearray' objects}
+       14    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+       15    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 argparse.py:2057(<listcomp>)
+        5    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+       12    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1065(get_filename)
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(has_location)
+        8    0.000    0.000    0.000    0.000 {built-in method sys.audit}
+        5    0.000    0.000    0.000    0.000 enum.py:801(value)
+        1    0.000    0.000    0.000    0.000 functools.py:65(wraps)
+        4    0.000    0.000    0.000    0.000 glob.py:199(_join)
+        4    0.000    0.000    0.000    0.000 {built-in method sys.intern}
+        6    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+       12    0.000    0.000    0.000    0.000 {method 'isascii' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'index' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 argparse.py:947(__call__)
+        1    0.000    0.000    0.000    0.000 argparse.py:1837(parse_args)
+        3    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:778(exec_module)
+        1    0.000    0.000    0.000    0.000 _compression.py:9(BaseStream)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:874(create_module)
+        4    0.000    0.000    0.000    0.000 sre_parse.py:163(__delitem__)
+        3    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+        3    0.000    0.000    0.000    0.000 argparse.py:2514(_check_value)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1163(__init__)
+        1    0.000    0.000    0.000    0.000 argparse.py:2180(_match_arguments_partial)
+        1    0.000    0.000    0.000    0.000 argparse.py:1830(<listcomp>)
+        1    0.000    0.000    0.000    0.000 argparse.py:1829(_get_positional_actions)
+        1    0.000    0.000    0.000    0.000 argparse.py:591(<listcomp>)
+        6    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        3    0.000    0.000    0.000    0.000 {method 'group' of 're.Match' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.iter}
+        3    0.000    0.000    0.000    0.000 argparse.py:1746(identity)
+        1    0.000    0.000    0.000    0.000 shutil.py:59(Error)
+        1    0.000    0.000    0.000    0.000 argparse.py:1307(__init__)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 shutil.py:62(SameFileError)
+        1    0.000    0.000    0.000    0.000 {built-in method math.sqrt}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.globals}
+        1    0.000    0.000    0.000    0.000 argparse.py:625(<listcomp>)
+        1    0.000    0.000    0.000    0.000 shutil.py:69(ExecError)
+        1    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:795(is_package)
+        1    0.000    0.000    0.000    0.000 shutil.py:75(RegistryError)
+        1    0.000    0.000    0.000    0.000 shutil.py:72(ReadError)
+        1    0.000    0.000    0.000    0.000 shutil.py:65(SpecialFileError)
+        1    0.000    0.000    0.000    0.000 shutil.py:79(_GiveupOnFastCopy)
+
+
